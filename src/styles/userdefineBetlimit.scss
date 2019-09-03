@@ -1,0 +1,90 @@
+.bet-common-table-box {
+    .bet-detail-box {
+        margin: 0 auto;
+        .row-list {
+            max-height: calc(100vh - 375px);
+            overflow-y: auto;
+        }
+    }
+ 
+    .el-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    .el-col {
+        width: 160px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        padding: 0 5px;
+        border: 1px solid gainsboro;
+        text-align: center;
+    }
+    .bet-header {
+       // -moz-box-sizing:padding-right: 16px;
+        // 表头
+        .el-col {
+            width: 160px!important;
+            background-color: #ebeef5;
+        }
+    }
+    .bet-detail {
+        .el-col {
+            padding: 0;
+            border: none;
+            background-color: #ebeef5;
+        }
+        .bet-col-header {
+            border: 1px solid gainsboro;
+        }
+        .el-input__inner {
+            background: #ebeef5;
+            border-radius: 0;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            padding: 0 5px;
+            font-size: 12px;
+            border: 1px solid gainsboro;
+        }
+    }
+}
+
+.row-list::-webkit-scrollbar {
+    display: none;
+}
+
+.none-bg-color {
+    .el-input__inner {
+        background: #fff!important;
+    }
+}
+@media screen and (min--moz-device-pixel-ratio:0) {  // 针对火狐的CSS样式设置
+
+      .pencent-content .people-data-list .cover-scrollbar{
+        right: 40px !important;
+      }
+   
+    .people-data-list{ // 看在线人数详情
+        .cover-scrollbar {
+          right: 43px !important;
+        }
+    }
+    .people-data-head-p{ // 看在线人数详情  -展示时间的边距
+        margin: 0px 170px 0px 21px !important;
+    
+    }
+//    .play_row_title {
+//         padding-right: 16px !important;
+//     }
+    .showPadding16{
+       padding-right: 16px !important;
+    }
+    .nonepadding16{
+        padding-right: 0px !important;
+     }
+}

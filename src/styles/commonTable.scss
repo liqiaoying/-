@@ -1,0 +1,121 @@
+//公共表格样式修改
+.el-form--inline .el-form-item__label {
+    font-weight: normal;
+}
+
+.el-table {
+    font-size: 12px;
+    th {
+        padding: 4px 0;
+        background-color: rgb(247, 251, 254);
+        text-align: center;
+    }
+    .cell {
+        line-height: 24px;
+    }
+    td {
+        padding: 0;
+    }
+    .el-checkbox+.el-checkbox {
+        margin-left: 10px;
+    }
+    .el-checkbox__label {
+        padding-left: 4px;
+        font-size: 12px
+    }
+}
+
+// 表格自动高度
+.tableAuto216 {
+    // 一排
+    max-height: calc(100vh - 216px);
+    overflow: auto;
+}
+
+.tableAuto256 {
+    // 两排
+    max-height: calc(100vh - 256px);
+    overflow: auto;
+}
+
+.tableAuto296 {
+    // 四排
+    max-height: calc(100vh - 326px);
+    overflow: auto;
+}
+
+.tableAuto180 {
+    width: 100%;
+    .el-table__body-wrapper {
+        height: calc(100vh - 241px);
+        overflow: auto;
+    }
+}
+
+.tableAuto170 {
+    max-height: calc(100vh - 175px);
+    height: auto;
+    overflow: auto;
+}
+
+.el-pager li {
+    padding: 0 2px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.el-pager li.active {
+    background: #409EFF;
+    color: #fff;
+    border-radius: 3px;
+    height: 22px;
+    margin-top: 2px;
+    line-height: 22px;
+    min-width: 24px
+}
+
+@media (max-width: 1367px) {
+    .tableAuto2166 {
+        max-height: calc(100vh - 210px);
+        overflow: auto;
+    }
+    .tableAuto216 {
+        max-height: calc(100vh - 250px);
+        overflow: auto;
+    }
+    .tableAuto256 {
+        max-height: calc(100vh - 290px);
+        overflow: auto;
+    }
+}
+
+@media (max-width: 960px) {
+    .tableAuto256 {
+        max-height: calc(100vh - 290px);
+        height: auto;
+        overflow: auto;
+    }
+    .tableAuto296 {
+        max-height: calc(100vh - 296px);
+        height: auto;
+        overflow: auto;
+    }
+}
+
+body .el-table::before {
+    z-index: inherit;
+}
+
+.el-table .caret-wrapper {
+    height: 20px;
+    width: 20px;
+    top: 2px;
+}
+
+.el-table .sort-caret.ascending {
+    top: 0px;
+}
+
+.el-table .sort-caret {
+    border: 3px solid transparent;
+}

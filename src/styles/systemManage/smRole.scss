@@ -1,0 +1,171 @@
+.smRole {
+    padding: 5px 15px;
+    height: 100%;
+    font-size: 12px !important;
+    .button_role {
+        height: 30px;
+        width: 70%;
+    }
+    @media (min-width:700px) and (max-width:1400px) {
+        // 1366*768的响应式布局el-form-item edition-box
+        .button_role {
+            width: 100%;
+            height: auto;
+        }
+        .role_dialog_input_span_name,
+        .smRole .AllocationUser .role_dialog_input_span_name {
+            width: 35% !important;
+        }
+    }
+    .buttonpermissions .el-input__icon {
+        // line-height: 26px !important;
+    }
+    // .buttonpermissions .el-input__inner {
+    //   height: 26px !important;
+    //   line-height: 26px !important;
+    // }
+    .button_role .el-input {
+        width: 120px;
+    }
+    .button_title {
+        width: 100%;
+        height: 45px;
+        text-align: right;
+        line-height: 45px;
+    }
+    .el-dialog .dialog-label-item {
+        margin-left: 34px;
+    }
+    .role_input_span_name,
+    .role_input_span_date {
+        opacity: 0.8;
+        font-size: 12px;
+        width: 50%;
+    }
+    .button_role_title_p {
+        width: 190px;
+        float: left;
+        margin-top: 5px;
+    }
+    .button_role_title_p_date {
+        width: 340px;
+        float: left;
+        margin-top: 5px;
+    }
+    .role_dialog_input_span_name {
+        width: 30%;
+        height: 30px;
+        display: inline-block;
+        text-align: right;
+    }
+    .role_dialogAllocationUser_input_span_name {
+        width: 10%;
+        height: 30px;
+        display: inline-block;
+        text-align: right;
+    }
+    .role_diialogAccredit_input_span_name {
+        width: 15%;
+        height: 30px;
+        display: inline-block;
+        text-align: right;
+    }
+    .AllocationUser .role_dialog_input_span_name {
+        width: 30% !important;
+    }
+    .AllocationUser .el-row {
+        margin-top: 0px;
+        margin-bottom: 12px;
+    }
+    .role_pagination {
+        width: 100%;
+        overflow: hidden;
+    }
+    .el-table,
+    .el-pagination,
+    .el-pagination__total,
+    .el-dialog__body {
+        font-size: 12px;
+    }
+    .el-pagination__sizes .el-input .el-input__inner {
+        font-size: 12px;
+    }
+    .el-button {
+        margin-left: 3px;
+    }
+    .Accredit .el-dialog__body p {
+        width: 30%;
+        float: left;
+    }
+    .el-transfer-panel__list {
+        display: flex;
+        flex-direction: column
+    }
+    .sm_role_transfer .el-transfer-panel__item.el-checkbox,
+    .el-transfer-panel .el-transfer-panel__header .el-checkbox {
+        text-align: left !important;
+    }
+    .app-container {
+        padding: 5px 15px;
+        height: 100%;
+        font-size: 12px !important;
+    }
+    .role_table .el-table td .cell {
+        white-space: nowrap;
+    }
+    .role_dialog .el-dialog .el-dialog__header,
+    .role_dialog_ .el-dialog .el-dialog__header {
+        padding: 10px;
+        border-bottom: 1px solid #D7D7D7;
+    }
+    .button_role .el-input__icon {
+        line-height: 26px !important;
+    }
+    .button_role .el-input__inner {
+        height: 26px !important;
+        line-height: 26px !important;
+    }
+    .role_dialog .el-dialog {
+        margin-top: 30vh !important;
+    }
+    .role_dialog_ .el-dialog {
+        margin-top: 12vh !important;
+    }
+    .AllocationUser .el-dialog {
+        margin-top: 25vh !important;
+    }
+    .role_dialog .el-dialog__body,
+    .role_dialog_ .el-dialog__body {
+        // text-align: -webkit-center;
+        // padding: 10px 20px;
+    }
+    .role_dialog .el-dialog__headerbtn,
+    .role_dialog_ .el-dialog__headerbtn {
+        top: 2px;
+    }
+    .role_dialog .el-dialog__title,
+    .role_dialog_ .el-dialog__title {
+        font-size: 14px;
+    }
+    .role_pagination .el-pagination__total,
+    .role_pagination .el-pagination__sizes .el-input .el-input__inner,
+    .role_pagination .el-pagination__jump {
+        font-size: 12px !important;
+    }
+    .el-table {
+        z-index: 999;
+    }
+    /* tree中的checkbox 方框样式 */
+    .el-checkbox__inner {
+        display: inline-block;
+        position: relative;
+        border: 1px solid #dcdfe6;
+        border-radius: 2px;
+        box-sizing: border-box;
+        width: 14px;
+        height: 14px;
+        background-color: #fff;
+        z-index: 1;
+        transition: border-color .25s cubic-bezier(.71, -.46, .29, 1.46), background-color .25s cubic-bezier(.71, -.46, .29, 1.46);
+    }
+}

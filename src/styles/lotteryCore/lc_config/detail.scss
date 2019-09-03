@@ -1,0 +1,120 @@
+
+/* 通用玩法样式   5列的样式与6列的样式*/ 
+.five-li  .el-input {
+  width: 100% !important;
+  height: 26px;
+ }
+.five-li.a{
+  &:first-child {
+    p {
+    background: rgb(242, 242, 242);
+  }
+  }
+}
+
+  .five-li{
+    
+    height: 27px;
+    line-height: 27px;
+    display: flex;
+    &:first-child {
+      p {
+      background: rgb(242, 242, 242);
+      }
+    }
+    p {
+      width:  calc((100% - 0px)/5.8);;
+      float: left;
+      border: solid 1px #dcdfe6;
+      border-bottom: none;
+      border-left: none;
+      min-width: 170px;
+      &:last-child {
+        // border-right: none;
+      }
+    }
+    span {
+      display: inline-block;
+      text-align: center;
+    }
+    &:last-child {
+      p {
+        border-bottom: 1px solid #dcdfe6;
+      }
+    }
+  }
+  .sethight{
+    .five-li{
+      &:first-child {
+        p {
+        background: none;
+        }
+      }
+    }
+  }
+  .spanone {
+    width:27%;
+    height: 100%;
+    border-right: solid 1px #dcdfe6;
+    .border_yuan {
+      border: solid 1px #dcdfe6;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      color: white;
+    }
+  }
+  .spantwo {
+    width:70%;
+    .el-input {
+      width: 100%;
+      height: 100%;
+      input {
+        height: 22px;
+        width: 80%;
+        text-align:center;
+      }
+    }
+  }
+     .spanone.a,.spantwo.b{
+    padding-top: 0px;
+}
+
+  //  11选5的直选
+  .divheight{
+    height: 130px; 
+    &:first-child{
+      border-top: solid 1px #dcdfe6;
+    }
+     }
+   .qiansanzhixuan-titie{ //前三直选中的p标签
+       font-size: 12px;
+       text-align: center;
+      //  border-top: solid 1px #dcdfe6;
+       height: 26px;
+       line-height: 26px;
+   }
+
+//   时时彩下的三字组合与二定位 
+   .setul{
+    height: 27px;
+     width:calc(100% - 17px);
+  }
+   .sethight{
+   max-height: 490px;
+    overflow: hidden;
+    overflow-y: auto;
+   }
+@media (min-width: 700px) and (max-width: 1800px) {
+
+  //   时时彩下的三字组合与二定位  
+  .sethight{
+   max-height: 380px;
+   }
+
+
+  }
+
+  
+ 

@@ -1,0 +1,101 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: height 0.1s;
+}
+
+/* 定义进入动画的初始状态*/
+.fade-enter {
+  height: 0;
+}
+
+/* 定义进入动画的结束状态*/
+.fade-enter-to {
+  height: 285px;
+}
+
+/* 定义离开动画的初始状态*/
+.fade-leave {
+  height: 285px;
+}
+
+/* 定义离开动画的结束状态*/
+.fade-leave-to {
+  height: 0;
+}
+
+.toggle-box {
+  // 折叠按钮样式
+  position: relative;
+  padding-top: 10px;
+  .show-toggle {
+    position: absolute;
+    z-index: 999;
+    left: calc(50% - 30px);
+    top: 10px;
+    padding: 0 25px;
+  }
+}
+.tableAuto175 {
+  // 查询条件折叠时 表格高度
+  max-height: calc(100vh - 175px) !important;
+  overflow: auto;
+}
+
+@media screen and (max-width: 1460px) {
+  .table-fold .el-form .heard-search-box {
+    flex-wrap: wrap;
+    .heard-search {
+      flex-direction: row !important;
+      margin-top: 0 !important;
+      &:first-child {
+        margin-top: 10px !important;
+      }
+    }
+  }
+}
+
+.table-fold {
+  // 通用条件筛选框样式
+  .el-form {
+    display: flex;
+    flex-direction: column;
+    .heard-search-box {
+      display: flex;
+      .heard-search {
+        margin: 0;
+        border: none;
+        padding: 0;
+        flex-direction: column;
+        margin-top: 10px;
+        .rem_tit {
+          width: 99px;
+          text-align: right;
+         
+        }
+        .sets {
+          width: 148px;
+        }
+        .rem_con {
+          padding-right: 0;
+        }
+        li .el-input {
+          width: 180px;
+        }
+        .el-date-editor.el-range-editor.el-input__inner {
+          width: 330px;
+        }
+        .el-tag--small {
+          // width: 35px;
+          // overflow: hidden;
+        }
+
+        &:nth-child(3) {
+          min-width: 365px;
+        }
+      }
+    }
+  }
+  .rem_con span {
+    color: #868585;
+  }
+}

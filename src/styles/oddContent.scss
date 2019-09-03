@@ -1,0 +1,71 @@
+.odd-content-box {
+    h2 {
+        padding-left: 20px;
+        line-height: 30px;
+        font-weight: normal;
+    }
+    .el-row {
+        border-top: 1px solid gainsboro;
+        &:last-child {
+            border-bottom: 1px solid gainsboro;
+        }
+    }
+    .odd-header,.odd-content {
+        // padding: 20px;
+        height: 30px;
+        line-height: 30px;
+        text-align: left;
+        display: flex;
+        
+        .el-col {
+            border-left: 1px solid gainsboro;
+            text-align: center;
+            background-color: #ebeef5;
+            border-right: none;
+            &:first-child {
+                border-left: none;
+            }
+            &:nth-child(2n+1) {
+                width: 60%;
+            }
+            &:nth-child(2n) {
+                // width: 100px;
+            }
+            .el-input__inner {
+                width: 77%;
+                height: 20px;
+                line-height: 20px;
+                font-size: 12px;
+                text-align: center;
+                background-color: #eceef3;
+                border-radius: 0;
+            }
+           
+        }
+    }
+    .odd-content {
+        .el-col {
+            .el-input {
+                width: unset;
+            }
+            background-color: #fff;
+            span {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background: #ee5e5e;
+                line-height: 20px;
+                border-radius: 30px;
+                color: #fff;
+                text-align: center;
+                border: 1px solid gainsboro;
+            }
+            .blue-ball {
+                background-color: #6296ff;
+            }
+            .green-ball {
+                background-color: #6dd060;
+            }
+        }
+    }
+}

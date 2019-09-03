@@ -1,0 +1,235 @@
+
+//覆盖一些element-ui样式
+.el-tooltip__popper.is-dark {
+  line-height: 28px;
+  max-width: calc(100% - 220px);
+}
+.el-textarea__inner {
+  font-size: 12px;
+}
+.el-tree-node__label {
+  font-size: 12px;
+}
+
+.el-button {
+  font-size: 12px;
+  padding: 6px 15px;
+}
+.el-menu-item,
+.el-submenu__title,
+.el-submenu .el-menu-item {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+}
+
+.el-select-dropdown__item {
+  font-size: 12px;
+}
+
+.el-input__icon {
+  line-height: 3px !important;
+}
+
+// 日期时间插件字体
+.el-date-editor .el-range-input {
+  font-size: 12px;
+}
+
+// 带时分秒的日期时间插件
+.el-date-editor--datetimerange.el-input__inner {
+  width: 330px;
+}
+// 分页
+.el-pagination {
+  text-align: right;
+  margin-top: 4px;
+}
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 7px 10px;
+    width: 60px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+
+//暂时性解决dialog 问题 https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+//文章页textarea修改样式
+.article-textarea {
+  textarea {
+    padding-right: 40px;
+    resize: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #bfcbd9;
+  }
+}
+
+//element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+//dropdown
+.el-dropdown-menu {
+  a {
+    display: block;
+  }
+}
+
+.el-form .el-form-item .el-input__inner,
+.el-form-item__content {
+  font-size: 12px;
+}
+
+.dialmtUser_info {
+  margin-top: 10vh;
+}
+
+// 时间样式
+.el-input--small .el-input__inner {
+  height: 26px;
+  line-height: 26px;
+}
+
+@media (max-width: 1366px) {
+  .el-col-4 {
+    width: 30%;
+  }
+  .rem_tit {
+    float: left;
+  }
+  .dialmtUser_info {
+    margin-top: 5vh;
+  }
+}
+//
+// 日期组件 样式
+.el-date-range-picker {
+  width: 530px;
+}
+// 日期组件 input
+.el-date-editor--daterange.el-input__inner {
+  width: 245px;
+}
+// 默认日期组件 样式
+.el-date-picker{
+  width: 272px !important;
+}
+// 默认日期组件 样式
+ .el-date-picker .el-picker-panel__content{
+width: 240px !important;
+}
+
+
+
+
+
+//  穿梭骏 lable样式
+.el-transfer-panel .el-transfer-panel__header .el-checkbox {
+  text-align: left;
+}
+.el-transfer-panel .el-transfer-panel__header .el-checkbox .el-checkbox__label {
+  font-size: 12px;
+}
+.el-dialog__body p {
+  line-height: 50px;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  height: 28px;
+  line-height: 28px;
+  background: #52aff6;
+}
+
+.el-pagination.is-background .el-pager li {
+  color: #5d5d5d;
+  border-radius: 6px;
+  border: 1px solid #d4d4d4;
+  background-color: #fff;
+}
+
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev {
+  border-radius: 6px;
+  background-color: #fff;
+  border: 1px solid #d4d4d4;
+}
+
+.el-pagination__jump {
+  margin-left: 15px;
+}
+
+.el-pagination__total {
+  line-height: 30px;
+}
+
+.el-pagination__editor.el-input {
+  margin-left: 15px;
+}
+.el-form-item__error {
+  padding-top: 22px;
+}
+.el-tabs__item {
+  font-size: 12px;
+}
+/**步骤条字的大小*/
+.el-step.is-simple .el-step__title{
+  font-size: 13px;
+}
+.el-time-panel{
+  left: -70px !important
+}

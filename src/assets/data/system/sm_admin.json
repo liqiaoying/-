@@ -1,0 +1,28 @@
+{
+    "code": 1,
+    "msg": "查询失败,当前页和页大小必须为正整数",
+    "total": 1000,
+    "data": [
+        {
+            "userName": "Jeffrey",
+            "loginIp": "100.100.100.122",
+            "loginIpAddress": "管理用户admin的测试地址",
+            "ipDescription": "我是管理数据",
+            "loginTime": "2019-03-17 20:47:25"
+        },
+        {
+            "userName": "Frank",
+            "loginIp": "102.102.102.10",
+            "loginIpAddress": "我是登录地址 test测试",
+            "ipDescription": "我是测试数据",
+            "loginTime": "2019-03-16 20:47:25"
+        },
+        {
+            "userName": "Steven",
+            "loginIp": "102.102.102.103",
+            "loginIpAddress": "管理用户manage的ip地址",
+            "ipDescription": "我是管理数据manage",
+            "loginTime": "2019-03-19 20:47:25"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+// 公共表单元素样式
+.el-form {
+  .el-col {
+    margin-bottom: 10px;
+  }
+  // 公共表单条件容器
+  .edition-box {
+    margin-top: 10px !important;
+    border: 1px solid #ebeef5;
+    padding: 8px 10px 0px 10px
+  }
+
+  //公共表单操作按钮容器
+  .operation-box {
+    margin: 0px 0 8px!important;
+    text-align: right;
+  }
+
+  .el-range-separator {
+    width: 24px !important;
+    font-size: 12px;
+  }
+
+  .el-input {
+    width: 120px;
+  }
+
+  .el-col {
+    .form-item-label {
+      width: 60px;
+      font-size: 12px;
+      text-align: left;
+    }
+
+    height: 26px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+
+
+  // 表单输入框label内容为2、3、4、5字数的样式约束
+  .col-2-word {
+    width: 160px !important;
+
+    .form-item-label {
+      width: 40px !important;
+    }
+  }
+
+  .col-3-word {
+    width: 170px !important;
+
+    .form-item-label {
+      width: 50px !important;
+    }
+  }
+
+ 
+
+  .el-form-item {
+    margin: 0;
+
+    .el-date-editor {
+      width: 77%;
+
+      .el-range-separator {
+        width: 10%;
+      }
+
+      .el-range-input {
+        width: 50%;
+        font-size: 12px;
+      }
+
+      .el-range-separator {
+        line-height: 26px !important;
+      }
+    }
+
+    .el-range-editor.el-input__inner {
+      padding: 0 10px;
+      cursor: pointer;
+    }
+
+    .el-form-item__content {
+      height: 26px;
+      line-height: 26px;
+    }
+
+
+    .el-select {
+      width: 120px;
+
+      .el-input {
+        width: 100%;
+        font-size: 12px;
+      }
+    }
+
+    .el-input__inner {
+      height: 26px;
+      line-height: 26px;
+      padding: 0 8px;
+    }
+
+    .el-form-item__label {
+      font-size: 12px;
+      line-height: 30px;
+      font-weight: normal;
+    }
+  }
+}

@@ -1,0 +1,303 @@
+@import './base.scss';
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './sidebar.scss';
+@import './btn.scss';
+@import './commonTable.scss';
+@import './commonForm.scss';
+@import './commonDialog.scss';
+@import './element-ui.scss';
+@import './lotteryFont.scss';
+// 重置元素样式
+html,
+body,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    font-size: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+// 公共样式
+.margin-top-8 {
+    margin-top: 8px!important
+}
+
+//树组件样式
+.tree_css {
+    width: 230px;
+    max-width: 230px;
+    min-width: 200px;
+    // float: left !important;
+    border: solid 1px #ebeef5 !important;
+    // overflow-y: auto !important;
+    overflow: auto !important;
+    height: 540px;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.padding-content {
+    padding: 4px 0;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.pr-5 {
+    padding-right: 5px;
+}
+
+.pl-5 {
+    padding-left: 5px;
+}
+
+.block {
+    display: block;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.inlineBlock {
+    display: block;
+}
+
+.clearfix {
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+}
+
+.warn-content {
+    background: rgba(66, 185, 131, .1);
+    border-radius: 2px;
+    padding: 16px;
+    padding: 1rem;
+    line-height: 1.6rem;
+    word-spacing: .05rem;
+    a {
+        color: #42b983;
+        font-weight: 600;
+    }
+}
+
+//main-container全局样式
+.app-container {
+    padding: 0 15px;
+    min-width: 1150px;
+}
+
+.components-container {
+    margin: 30px 50px;
+    position: relative;
+}
+
+.pagination-container {
+    margin-top: 30px;
+}
+
+.text-center {
+    text-align: center
+}
+
+.sub-navbar {
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    width: 100%;
+    text-align: right;
+    padding-right: 20px;
+    transition: 600ms ease position;
+    background: linear-gradient(90deg, rgba(32, 182, 249, 1) 0%, rgba(32, 182, 249, 1) 0%, rgba(33, 120, 241, 1) 100%, rgba(33, 120, 241, 1) 100%);
+    .subtitle {
+        font-size: 20px;
+        color: #fff;
+    }
+    &.draft {
+        background: #d0d0d0;
+    }
+    &.deleted {
+        background: #d0d0d0;
+    }
+}
+
+.link-type,
+.link-type:focus {
+    color: #337ab7;
+    cursor: pointer;
+    &:hover {
+        color: rgb(32, 160, 255);
+    }
+}
+
+.filter-container {
+    padding-bottom: 10px;
+    .filter-item {
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 10px;
+    }
+}
+
+//refine vue-multiselect plugin
+.multiselect {
+    line-height: 16px;
+}
+
+.multiselect--active {
+    z-index: 1000 !important;
+}
+
+.el-tree>.el-tree-node {
+    min-width: 100%;
+    display: inline-block !important;
+}
+
+.v-modal {
+    z-index: 1005;
+    //   z-index: 1005 !important;
+}
+
+input {
+    color: #868585 !important;
+    font-size: 12px !important;
+}
+
+// 遮罩层的样式 
+.mask-layer {
+    width: 100%;
+    height: 100%;
+    background-color: #999999;
+    opacity: 0.6;
+    z-index: 1040 !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    margin: 0;
+}
+
+// 查看玩法规则 下面的大写文字隐藏
+.mce-wordcount,
+.mce-branding {
+    display: none !important;
+}
+
+.mce-menubar {
+    display: none !important;
+}
+// 滚动条遮罩层
+.cover-scrollbar {
+    height: 100%;
+    width: 18px;
+    position: absolute;
+    right: -3px;
+    bottom: -1px;
+    z-index: 10006;
+    background: #fff;
+    border-left: 1px solid #dcdfe6;
+    box-sizing: content-box;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+  }
